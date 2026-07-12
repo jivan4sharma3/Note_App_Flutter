@@ -69,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   Icon(
                     Icons.note_add_outlined,
                     size: 64,
-                    color: AppColors.subtleText.withOpacity(0.5),
+                    color: AppColors.subtleText.withValues(alpha: 0.5),
                   ),
                   const SizedBox(height: 16),
                   Text(
@@ -84,7 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     'Tap the + button to create your first note',
                     style: TextStyle(
                       fontSize: 14,
-                      color: AppColors.subtleText.withOpacity(0.7),
+                      color: AppColors.subtleText.withValues(alpha: 0.7),
                     ),
                   ),
                 ],
@@ -120,7 +120,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         borderRadius: BorderRadius.circular(16),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.05),
+                            color: Colors.black.withValues(alpha: 0.05),
                             blurRadius: 8,
                             offset: const Offset(0, 2),
                           ),
@@ -156,7 +156,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               _formatDate(note.updatedAt),
                               style: TextStyle(
                                 fontSize: 12,
-                                color: AppColors.subtleText.withOpacity(0.7),
+                                color: AppColors.subtleText.withValues(alpha: 0.7),
                               ),
                             ),
                           ],

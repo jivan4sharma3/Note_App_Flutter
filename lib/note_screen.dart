@@ -115,7 +115,7 @@ class _NoteScreenState extends State<NoteScreen> {
                         ),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.05),
+                            color: Colors.black.withValues(alpha: 0.05),
                             blurRadius: 4,
                             offset: const Offset(0, 2),
                           ),
@@ -180,7 +180,7 @@ class _NoteScreenState extends State<NoteScreen> {
                 'Last updated: ${_formatDate(widget.note!.updatedAt)}',
                 style: TextStyle(
                   fontSize: 12,
-                  color: AppColors.subtleText.withOpacity(0.7),
+                  color: AppColors.subtleText.withValues(alpha: 0.7),
                 ),
               ),
           ],
